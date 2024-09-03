@@ -8,7 +8,7 @@ export default function Section2()
 
   useEffect(() => {
     randomWords.forEach(word => {
-      axios.get(`http://api.tvmaze.com/search/shows?q=${word}`)
+      axios.get(`https://api.tvmaze.com/search/shows?q=${word}`)
         .then(response => {
           setShows(prevShows => ({
             ...prevShows,
